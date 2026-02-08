@@ -16,5 +16,8 @@
 
 ## Context
 
+- Recently became a sole trader in the UK
+- Business focus: SEO services and website builds
+- Wants Joi as an active assistant/strategic partner in the business
 - Interested in sole-trader UK website/SEO offer design and pricing
 - Wants Gmail and WhatsApp integration through OpenClaw
