@@ -1,0 +1,91 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 6 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1610 >>
+stream
+BT
+/F2 20 Tf
+1 0 0 1 50 800 Tm
+(Riker Audit - Example PDF) Tj
+/F1 11 Tf
+1 0 0 1 50 770 Tm
+(Character Style: Riker - The Confident XO) Tj
+1 0 0 1 50 753 Tm
+(Persona cues: decisive, composed, action-forward, leadership under pressure.) Tj
+1 0 0 1 50 736 Tm
+() Tj
+1 0 0 1 50 719 Tm
+(Client: AIP \(demo\)) Tj
+1 0 0 1 50 702 Tm
+(Audit Date: 2026-02-12) Tj
+1 0 0 1 50 685 Tm
+() Tj
+1 0 0 1 50 668 Tm
+(Executive Signal:) Tj
+1 0 0 1 50 651 Tm
+(- Foundation is serviceable, but authority flow is uneven.) Tj
+1 0 0 1 50 634 Tm
+(- Fast wins exist in information architecture and internal linking.) Tj
+1 0 0 1 50 617 Tm
+(- Local intent pages need clearer hierarchy and conversion paths.) Tj
+1 0 0 1 50 600 Tm
+() Tj
+1 0 0 1 50 583 Tm
+(Priority Missions \(Next 14 Days\):) Tj
+1 0 0 1 50 566 Tm
+(1\) Resolve indexation + canonical conflicts on key templates.) Tj
+1 0 0 1 50 549 Tm
+(2\) Improve title/meta positioning for high-intent commercial queries.) Tj
+1 0 0 1 50 532 Tm
+(3\) Ship internal-link hubs from top authority pages to money pages.) Tj
+1 0 0 1 50 515 Tm
+(4\) Add schema + FAQ blocks on service pages to improve SERP real estate.) Tj
+1 0 0 1 50 498 Tm
+() Tj
+1 0 0 1 50 481 Tm
+(Command Notes:) Tj
+1 0 0 1 50 464 Tm
+(- Track impact weekly: indexed URLs, top-10 terms, qualified leads.) Tj
+1 0 0 1 50 447 Tm
+(- Escalate anything blocking crawl, render, or conversion routes.) Tj
+1 0 0 1 50 430 Tm
+() Tj
+1 0 0 1 50 413 Tm
+(Outcome Frame:) Tj
+1 0 0 1 50 396 Tm
+(Tighten structure first, then scale content. Win the map before adding miles.) Tj
+1 0 0 1 50 379 Tm
+() Tj
+1 0 0 1 50 362 Tm
+(\(Demo PDF style sample\)) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000001983 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2058
+%%EOF
