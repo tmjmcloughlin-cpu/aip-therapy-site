@@ -1,1 +1,12 @@
 secrets/
+
+# Blogger automation secrets
+/tools/blogger/.env
+/tools/blogger/credentials.json
+/tools/blogger/token.json
+
+# Node
+node_modules/
+
+# Generated reports
+reports/*.pdf
