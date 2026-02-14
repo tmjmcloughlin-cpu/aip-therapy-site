@@ -32,6 +32,10 @@ async function prompt(question) {
 }
 
 async function main() {
+  const args = new Set(process.argv.slice(2));
+  const codeArgIdx = process.argv.findIndex((x) => x === '--code');
+  const codeArg = codeArgIdx >= 0 ? (process.argv[codeArgIdx + 1] || '').trim() : '';
+
   const credentialsPath = path.resolve(mustEnv('GOOGLE_OAUTH_CREDENTIALS_PATH'));
   const tokenPath = path.resolve(mustEnv('GOOGLE_OAUTH_TOKEN_PATH'));
 
@@ -59,9 +63,15 @@ async function main() {
 
   console.log('\nOpen this URL in your browser and complete consent:');
   console.log(authUrl);
+
+  if (args.has('--print-url')) {
+    console.log('\n(--print-url) Exiting after printing the URL.');
+    return;
+  }
+
   console.log('\nThen paste the code you receive here.');
 
-  const code = await prompt('Code: ');
+  const code = codeArg || (await prompt('Code: '));
   if (!code) throw new Error('No code provided.');
 
   const { tokens } = await oauth2Client.getToken(code);
