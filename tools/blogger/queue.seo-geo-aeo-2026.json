@@ -1,0 +1,39 @@
+[
+  {
+    "title": "SEO vs GEO vs AEO in 2026 (UK): What’s Changed, What Hasn’t",
+    "htmlFile": "tools/blogger/posts/seo-geo-aeo-2026-uk.html",
+    "labels": ["SEO", "GEO", "AEO", "SEO 2026", "UK"],
+    "images": {
+      "featured": "tools/blogger/images/seo-geo-aeo-2026/featured.png",
+      "inPost": [
+        "tools/blogger/images/seo-geo-aeo-2026/funnel.png",
+        "tools/blogger/images/seo-geo-aeo-2026/checklist.png"
+      ]
+    }
+  },
+  {
+    "title": "Local SEO in 2026: What Actually Moves the Needle for UK Local Businesses",
+    "htmlFile": "tools/blogger/posts/local-seo-2026-uk-what-moves.html",
+    "labels": ["Local SEO", "SEO 2026", "UK", "Small Business"]
+  },
+  {
+    "title": "AEO in 2026: How to Win ‘Answer’ Queries (Without Writing Fluff)",
+    "htmlFile": "tools/blogger/posts/aeo-2026-answer-queries.html",
+    "labels": ["AEO", "SEO", "Content", "SERP Features"]
+  },
+  {
+    "title": "GEO in 2026: How to Get Recommended by AI Search (Without ‘AI Content Spam’)",
+    "htmlFile": "tools/blogger/posts/geo-2026-recommended-by-ai.html",
+    "labels": ["GEO", "AI Search", "SEO", "Brand"]
+  },
+  {
+    "title": "Google Business Profile in 2026: The Checklist I’d Use on Any UK Local Site",
+    "htmlFile": "tools/blogger/posts/gbp-2026-uk-checklist.html",
+    "labels": ["Google Business Profile", "Local SEO", "UK", "Checklist"]
+  },
+  {
+    "title": "Tracking SEO/GEO/AEO in 2026: A Weekly Scorecard You Can Actually Maintain",
+    "htmlFile": "tools/blogger/posts/tracking-seo-geo-aeo-2026.html",
+    "labels": ["Tracking", "GA4", "GSC", "SEO 2026", "GEO", "AEO"]
+  }
+]
