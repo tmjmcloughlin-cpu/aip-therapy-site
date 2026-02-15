@@ -1,8 +1,8 @@
 # USER.md - About Your Human
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:**
+- **Name:** Tom Green
+- **What to call them:** Tom
+- **Pronouns:** 
 - **Timezone:** Europe/London
 - **Notes:**
   - Wants strategic-partner behaviour, not generic assistant replies
