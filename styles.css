@@ -12,6 +12,8 @@
   --secondary: #8da7c2;
   --lavender: #c7bfd9;
   --accent: #f2b8a0;
+  --blue: #4f86c6;
+  --blue-soft: #d9e8f8;
   --mint: #cfe6de;
 
   --border: #d8e3e5;
@@ -97,7 +99,7 @@ header {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, var(--primary), var(--blue));
   color: var(--primary-ink);
   border-color: transparent;
   box-shadow: 0 8px 18px rgba(95, 143, 135, 0.24);
@@ -211,3 +213,11 @@ input, textarea, select { width:100%; padding:11px 12px; border:1px solid var(--
 label { font-weight:600; display:block; margin-bottom:6px; }
 .blog-list { display:grid; gap:14px; }
 @media (max-width: 700px){ .form-grid{grid-template-columns:1fr;} }
+
+
+.hero.blue { background: linear-gradient(180deg, rgba(79,134,198,0.12), rgba(79,134,198,0.03)); border-bottom:1px solid var(--border); }
+.stars { color:#f5b301; letter-spacing:2px; font-size: 0.95rem; }
+.review-link { text-decoration:none; color:inherit; display:block; }
+.review-link:hover { transform: translateY(-1px); }
+.review-summary { background: var(--blue-soft); border:1px solid #bfd6f1; color:#264a73; border-radius: 10px; padding:10px 12px; margin: 10px 0 14px; font-weight:600; }
+.profile-photo { width:100%; max-width:360px; border-radius:14px; border:1px solid var(--border); box-shadow: var(--shadow); }
