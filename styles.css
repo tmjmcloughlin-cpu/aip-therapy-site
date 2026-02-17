@@ -360,3 +360,16 @@ label { font-weight:600; display:block; margin-bottom:6px; }
     padding:0;
   }
 }
+
+
+.page-title p,
+.page-title .muted {
+  max-width: 760px;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.page-title h1 {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
