@@ -1,5 +1,5 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>EMDR Therapy Derby | AIP Therapy</title><meta name="description" content="EMDR-informed trauma support in Derby and online, delivered with careful pacing and practical stabilisation." /><link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -25,4 +25,16 @@
 <section class="section alt"><div class="container grid"><article class="card"><h2>EMDR-focused trauma support</h2><p>This page is for clients seeking trauma-focused treatment in Derby with online options. James’ ex-military background brings lived understanding of pressure, identity change and hypervigilance, while therapy remains clinically grounded and paced.</p><ul class="list-clean"><li>Intrusive memories and trigger responses</li><li>PTSD symptoms and nervous-system overactivation</li><li>Confidence loss after high-stress events</li></ul></article><article class="card"><div class="image-placeholder">Add EMDR session image / bilateral stimulation visual</div></article></div></section>
 <section class="section"><div class="container card"><h2>Safety and suitability first</h2><p>EMDR is not rushed. We start with stabilisation and resourcing, then move into processing only when appropriate.</p><p class="muted">Add exact EMDR training credentials, accreditation and scope statement here.</p><a class="btn primary" href="contact.html">Ask if EMDR is right for you</a></div></section>
 
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>
