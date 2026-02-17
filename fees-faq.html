@@ -1,6 +1,6 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Fees & FAQs | AIP Therapy Derby</title><meta name="description" content="Session pricing and FAQs for psychotherapy and hypnotherapy in Derby and online." /><link rel="stylesheet" href="styles.css" /><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you offer in-person sessions in Derby?","acceptedAnswer":{"@type":"Answer","text":"Yes. In-person sessions are available in Derby, and online sessions are available across the UK."}},{"@type":"Question","name":"How long is each session?","acceptedAnswer":{"@type":"Answer","text":"Standard appointments are 50 minutes."}},{"@type":"Question","name":"What issues do you support?","acceptedAnswer":{"@type":"Answer","text":"Common areas include anxiety, panic, trauma, PTSD, stress, sleep issues, anger, confidence and habits including smoking cessation."}},{"@type":"Question","name":"How much is a session?","acceptedAnswer":{"@type":"Answer","text":"Current pricing shown on this page is \u00a367 for a 50-minute appointment."}}]}</script>
 </head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -38,4 +38,16 @@
   </div>
 </section>
 
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>

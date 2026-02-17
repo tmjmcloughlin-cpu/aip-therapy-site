@@ -1,5 +1,5 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Hypnotherapy in Derby | AIP Therapy</title><meta name="description" content="Hypnotherapy in Derby and online for anxiety, trauma, PTSD, confidence and sleep." /><link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -30,4 +30,16 @@
 <section class="section"><div class="container card"><h2>Key pages</h2><div class="subnav"><a href="location-derby.html">Location</a><a href="fees-faq.html">Fees & FAQs</a><a href="trauma-therapy-derby.html">Trauma Therapy</a><a href="smoking-cessation-hypnotherapy-derby.html">Smoking Cessation</a><a href="anger-management-therapy-derby.html">Anger Management</a></div></div></section>
 
 <section class="section"><div class="container grid hypno-visuals"><article class="card"><div class="image-frame"><img class="media-fit media-square" src="https://static.wixstatic.com/media/b5276c_909c6cebf1c74bc9af58703a78974550~mv2.jpg" alt="Stress and fatigue" /></div><p class="small muted">Stress & fatigue</p></article><article class="card"><div class="image-frame"><img class="media-fit media-square" src="https://static.wixstatic.com/media/b5276c_47a1aa46a12449fcb47e3a2c26b5e970~mv2.jpg" alt="Supportive group session" /></div><p class="small muted">Support & growth</p></article></div></section>
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>

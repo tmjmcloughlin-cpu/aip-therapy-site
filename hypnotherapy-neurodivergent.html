@@ -1,5 +1,5 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Neurodivergent Hypnotherapy Derby | AIP Therapy</title><meta name="description" content="Neurodivergent-friendly hypnotherapy in Derby and online, adapted for sensory and processing needs." /><link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -25,4 +25,16 @@
 <section class="section alt"><div class="container grid"><article class="card"><h2>Neurodivergent-friendly support</h2><p>Sessions are adapted for sensory load, processing style and communication preferences. The focus is practical support without forcing a one-size-fits-all model.</p><ul class="list-clean"><li>Adapted pacing and structure</li><li>Overwhelm and shutdown support</li><li>Anxiety and emotional regulation tools</li><li>Clear, collaborative planning</li></ul></article><article class="card"><div class="image-placeholder">Add neurodivergent-support image</div></article></div></section>
 <section class="section"><div class="container card"><p>In-person in Derby or online UK-wide, with flexible session planning.</p><a class="btn primary" href="contact.html">Check availability</a></div></section>
 
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>

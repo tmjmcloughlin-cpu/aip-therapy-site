@@ -1,7 +1,7 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>About James Harris | AIP Therapy Derby</title><meta name="description" content="James Harris: BACP-registered psychotherapist in Derby. Story, qualifications, book, and services." />
 <link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -49,4 +49,16 @@
 <section class="section alt"><div class="container card"><h2>About quick links</h2><div class="subnav"><a href="about-james-harris.html">James Harris</a><a href="location-derby.html">Location</a><a href="fees-faq.html">Fees & FAQs</a></div></div></section>
 
 <section class="section"><div class="container card"><h2>Audio sample</h2><p>Preview the audiobook sample for <strong>Anything Is Possible</strong>.</p><img class="media-fit" src="https://static.wixstatic.com/media/b5276c_dd8693fad7c24f6985ef6bf9105b80ce~mv2.png" alt="Anything Is Possible artwork" /><div class="video-box" style="margin-top:12px"><video controls preload="metadata" src="https://video.wixstatic.com/video/b5276c_c0d25e5e29844a5185555c7cc32af7e2/480p/mp4/file.mp4"></video></div><p class="muted small">Replace with official audiobook sample URL if a dedicated audio file is available.</p></div></section>
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>

@@ -10,8 +10,8 @@
 <body>
 <header>
   <div class="container nav">
-    <a class="brand" href="index.html">AIP Therapy</a>
-    <nav class="nav-links">
+    <a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -75,5 +75,17 @@
 </main>
 
 <footer><div class="container muted">© 2026 AIP Therapy.</div></footer>
+<script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
 </body>
 </html>

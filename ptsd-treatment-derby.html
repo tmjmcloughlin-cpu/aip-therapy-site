@@ -1,9 +1,21 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PTSD Treatment Derby | AIP Therapy</title><meta name="description" content="PTSD treatment in Derby and online with trauma-aware, stabilisation-first support." /><link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a><a href="psychotherapy-derby.html">Psychotherapy</a><a href="hypnotherapy-derby.html">Hypnotherapy</a><a href="emdr-ex-military.html">EMDR</a><a href="about-james-harris.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
     </nav><div class="quick-actions"><a class="btn call small" href="tel:+44738894928">Call</a><a class="btn msg small" href="https://wa.me/447378894928">Message me</a></div></div></header>
 <main><section class="page-title"><div class="container"><h1>PTSD Treatment in Derby</h1><p class="muted">Trauma-aware treatment focused on stabilisation, recovery and long-term resilience.</p></div></section>
 <section class="section alt"><div class="container grid"><article class="card"><h2>What this includes</h2><ul class="list-clean"><li>Hypervigilance and startle response support</li><li>Sleep disruption and nightmare recovery</li><li>Trigger-response retraining</li><li>Integrative pathway: psychotherapy, hypnotherapy, EMDR-informed work</li></ul><a class="btn primary" href="contact.html">Book a free 15-minute intro call</a></article><article class="card"><div class="image-placeholder">Add relevant service image</div></article></div></section>
 <section class="section review-strip"><div class="container card"><h2>Reviews</h2><div class="review-summary">★★★★★ 6 recent Google reviews highlighted • <a href="https://www.google.com/maps/search/?api=1&query=Anything+is+Possible+Therapy+Derby" target="_blank" rel="noopener">View full Google profile</a></div></div></section>
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>

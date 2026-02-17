@@ -1,7 +1,7 @@
 <!doctype html><html lang="en-GB"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Blog | AIP Therapy Derby</title><meta name="description" content="Articles on anxiety, trauma recovery, hypnotherapy and practical mental health strategies." />
 <link rel="stylesheet" href="styles.css" /></head><body>
-<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><nav class="nav-links">
+<header><div class="container nav"><a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="psychotherapy-derby.html">Psychotherapy</a>
       <a href="hypnotherapy-derby.html">Hypnotherapy</a>
@@ -24,4 +24,16 @@
 <main><section class="page-title"><div class="container"><h1>AIP Therapy Blog</h1><p class="muted">Practical articles for anxiety, trauma recovery and emotional resilience.</p></div></section>
 <section class="section alt"><div class="container blog-list"><article class="card"><h3><a href="blog-anxiety-reset.html">5 practical ways to reset anxiety in under 10 minutes</a></h3><p>Fast regulation tools for high-pressure days.</p></article><article class="card"><h3><a href="#">How to choose between psychotherapy, hypnotherapy and EMDR</a></h3><p class="muted">Draft coming soon.</p></article></div></section>
 <section class="section"><div class="container card"><h2>Site admin</h2><p><a class="btn secondary" href="tracking-plan.html">View conversion tracking plan</a></p></div></section>
-</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer></body></html>
+</main><footer><div class="container muted">© 2026 AIP Therapy.</div></footer><script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
+</body></html>
