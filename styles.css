@@ -373,3 +373,11 @@ label { font-weight:600; display:block; margin-bottom:6px; }
   overflow-wrap: anywhere;
   hyphens: auto;
 }
+
+
+/* Overflow safety */
+.card, .container, .subnav, .nav-links, .dropdown-menu { min-width: 0; }
+p, li, a, h1, h2, h3 { overflow-wrap: anywhere; }
+.subnav a { white-space: normal; line-height: 1.3; }
+.nav-links a, .dropdown-menu a { white-space: normal; }
+video, iframe, img { max-width: 100%; }
