@@ -256,3 +256,15 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 
 .media-fit{width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow);}
 .video-box video{width:100%;border-radius:12px;border:1px solid var(--border);background:#000;}
+
+
+.media-hero{aspect-ratio:4/3; max-height:420px;}
+.media-card{aspect-ratio:16/10;}
+.media-square{aspect-ratio:1/1;}
+.media-wide{aspect-ratio:16/9;}
+.image-frame{overflow:hidden;border-radius:12px;}
+.video-box{overflow:hidden;border-radius:12px;}
+.video-box video{aspect-ratio:16/9;object-fit:cover;}
+@media (max-width: 700px){
+  .media-hero{aspect-ratio:16/10; max-height:none;}
+}
