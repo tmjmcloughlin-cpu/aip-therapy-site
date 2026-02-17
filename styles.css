@@ -222,11 +222,12 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 
 .nav-links { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
 .nav-links > a, .dropbtn { margin-left:0; }
-.dropdown { position: relative; }
+.dropdown { position: relative; padding-bottom: 6px; }
 .dropbtn { text-decoration:none; color: var(--muted); font-weight:600; }
 .dropdown-menu {
+  padding-top: 6px;
   position:absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   display:none;
   min-width: 190px;
@@ -245,7 +246,8 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 }
 .dropdown-menu a:hover { background: var(--surface-soft); }
 .dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu { display:block; }
+.dropdown:focus-within .dropdown-menu {
+  padding-top: 6px; display:block; }
 
 
 .media-fit{width:100%;height:auto;display:block;object-fit:contain;background:#fff;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow);}
@@ -282,6 +284,7 @@ label { font-weight:600; display:block; margin-bottom:6px; }
   .dropdown { display: contents; }
   .dropbtn { display: none; }
   .dropdown-menu {
+  padding-top: 6px;
     display: contents;
     position: static;
     min-width: 0;
