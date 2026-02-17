@@ -253,3 +253,6 @@ label { font-weight:600; display:block; margin-bottom:6px; }
   .dropdown-menu { position: static; display:block; border:none; box-shadow:none; background:transparent; padding:0; }
   .dropdown-menu a { padding:4px 0; }
 }
+
+.media-fit{width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow);}
+.video-box video{width:100%;border-radius:12px;border:1px solid var(--border);background:#000;}
