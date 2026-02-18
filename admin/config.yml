@@ -1,0 +1,73 @@
+backend:
+  name: github
+  repo: tmjmcloughlin-cpu/aip-therapy-site
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://aip-therapy-site.vercel.app
+logo_url: https://static.wixstatic.com/media/b5276c_865a1e1feee34ca3a56d572dd2224396~mv2.png
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "content/site/settings.md"
+        label: "Global Settings"
+        name: "settings"
+        fields:
+          - {label: "Business Name", name: "business_name", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "WhatsApp", name: "whatsapp", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+
+  - name: "pages"
+    label: "Core Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Meta Description", name: "meta_description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "services"
+    label: "Service Pages"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Service Name", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Meta Description", name: "meta_description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "faq"
+    label: "FAQs"
+    folder: "content/faq"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Question", name: "title", widget: "string"}
+      - {label: "Answer", name: "body", widget: "markdown"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Description", name: "meta_description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
