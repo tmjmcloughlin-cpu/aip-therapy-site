@@ -489,3 +489,6 @@ h3 {
     padding:10px;
   }
 }
+
+.offer-ribbon { background: #ffe8a3; color: #2b2b2b; border-top: 1px solid #f4cf6b; border-bottom: 1px solid #f4cf6b; font-weight: 700; }
+.offer-ribbon .container { padding: 10px 0; text-align: center; }
