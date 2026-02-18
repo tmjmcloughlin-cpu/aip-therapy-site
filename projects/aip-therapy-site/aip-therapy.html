@@ -3,48 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIP Therapy Process</title>
+  <title>AIP Therapy Process | A clear plan from overwhelm to stability</title>
+  <meta name="description" content="Understand the AIP Therapy process: assessment, intervention, and integration with practical support between sessions." />
   <link rel="stylesheet" href="styles.css" />
+<!-- SEO_START -->
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://aip-therapy-site.vercel.app/aip-therapy.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="AIP Therapy Process | A clear plan from overwhelm to stability" />
+<meta property="og:description" content="Understand the AIP Therapy process: assessment, intervention, and integration with practical support between sessions." />
+<meta property="og:url" content="https://aip-therapy-site.vercel.app/aip-therapy.html" />
+<meta property="og:site_name" content="Anything Is Possible Therapy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AIP Therapy Process | A clear plan from overwhelm to stability" />
+<meta name="twitter:description" content="Understand the AIP Therapy process: assessment, intervention, and integration with practical support between sessions." />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Anything Is Possible Therapy","url":"https://aip-therapy-site.vercel.app","telephone":"+44738894928","address":{"@type":"PostalAddress","streetAddress":"Room 6, 72 Wilson St","addressLocality":"Derby","postalCode":"DE1 1PL","addressCountry":"GB"},"areaServed":["Derby","United Kingdom"],"sameAs":["https://www.google.com/maps/search/?api=1&query=Anything+is+Possible+Therapy+Derby"]}</script>
+<!-- SEO_END -->
 </head>
 <body>
 <header>
   <div class="container nav">
-    <a class="brand" href="index.html">AIP Therapy</a>
-    <nav class="nav-links">
-      <a href="aip-therapy.html">AIP Therapy</a>
-      <a href="about.html">About</a>
+    <a class="brand" href="index.html">AIP Therapy</a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="nav-links">
+      <a href="psychotherapy-derby.html">Psychotherapy</a>
+      <a href="hypnotherapy-derby.html">Hypnotherapy</a>
+      <a href="emdr-ex-military.html">EMDR</a>
+      <div class="dropdown">
+        <a href="about-james-harris.html" class="dropbtn">About ▾</a>
+        <div class="dropdown-menu">
+          <a href="about-james-harris.html">James Harris</a>
+          <a href="location-derby.html">Location</a>
+          <a href="fees-faq.html">Fees & FAQs</a>
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="quick-actions">
+      <a class="btn call small" href="tel:+44738894928">Call</a>
+      <a class="btn msg small" href="https://wa.me/447378894928">Message me</a>
+    </div>
   </div>
 </header>
+
 <main>
+<section class="offer-ribbon" aria-label="Special offer"><div class="container"><strong>Special Offer:</strong> £67 per session (normally £110) for a limited time.</div></section>
   <section class="page-title">
     <div class="container">
-      <h1>How AIP Therapy works</h1>
-      <p class="muted">A structured, collaborative process designed around your daily reality.</p>
+      <h1>The AIP Therapy method</h1>
+      <p class="muted">A structured process built for real-life pressure, not perfect conditions.</p>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section alt">
     <div class="container grid">
-      <article class="card"><h3>Assessment</h3><p>Initial mapping of stress patterns, recovery blockers, and priorities.</p></article>
-      <article class="card"><h3>Intervention</h3><p>Targeted tools for regulation, boundaries, recovery and thought patterns.</p></article>
-      <article class="card"><h3>Integration</h3><p>Weekly implementation support so changes actually stick.</p></article>
+      <article class="card">
+        <h3>1) Assessment & map</h3>
+        <p>We identify your trigger patterns, energy bottlenecks, and highest-leverage changes for the next 30 days.</p>
+      </article>
+      <article class="card">
+        <h3>2) Targeted interventions</h3>
+        <p>You learn practical regulation and cognitive tools designed for high-pressure moments.</p>
+      </article>
+      <article class="card">
+        <h3>3) Integration & consistency</h3>
+        <p>We embed these tools into routines, relationships, and work rhythms so they stick.</p>
+      </article>
     </div>
   </section>
 
   <section class="section">
     <div class="container card">
-      <h2>Session format</h2>
+      <h2>Session structure</h2>
       <ul class="list-clean">
-        <li>50-minute 1:1 sessions (online)</li>
-        <li>Weekly or fortnightly options</li>
+        <li>50-minute 1:1 online sessions</li>
+        <li>Weekly (recommended initially) or fortnightly cadence</li>
         <li>Simple between-session action plan</li>
       </ul>
-      <p><a class="btn primary" href="contact.html">Check availability</a></p>
+      <h3>Typical timeframe</h3>
+      <p>Most clients begin to notice change within 3–6 sessions, then move into consolidation.</p>
+      <p><a class="btn primary" href="contact.html">Book a clarity call</a></p>
     </div>
   </section>
+
+<section class="section alt"><div class="container card"><h2>Clinic interior video</h2><p class="muted">See the setting before you attend. Online sessions are also available UK-wide.</p><div class="video-box"><video controls preload="metadata" src="/assets/videos/file-mp4-2553539c.mp4"></video></div></div></section>
+
 </main>
+
 <footer><div class="container muted">© 2026 AIP Therapy.</div></footer>
+<script>
+(function(){
+  const header = document.querySelector('header');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  if (!header || !toggleBtn) return;
+  toggleBtn.addEventListener('click', function(){
+    const open = header.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+</script>
 </body>
 </html>
