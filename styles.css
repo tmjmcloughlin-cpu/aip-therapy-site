@@ -56,10 +56,31 @@ header {
 
 .brand {
   font-weight: 800;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   text-decoration: none;
-  color: var(--text);
+  color: #17324a;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.02rem;
 }
+
+.brand::before {
+  content: "AIP";
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-dark), var(--blue));
+  box-shadow: 0 6px 14px rgba(79, 122, 115, 0.28);
+}
+
+.brand:hover { color: #102638; }
 
 .nav-links a {
   margin-left: 18px;
