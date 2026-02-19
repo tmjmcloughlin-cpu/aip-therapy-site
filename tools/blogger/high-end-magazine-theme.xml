@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title><data:blog.pageTitle/></title>
+    <b:include data='blog' name='all-head-content'/>
+
+    <b:skin><![CDATA[
+      :root {
+        --bg: #0b0e12;
+        --bg-soft: #121722;
+        --card: #171d2a;
+        --ink: #eef2f8;
+        --ink-soft: #b7c0d4;
+        --line: #273149;
+        --brand: #c8a96a;
+        --brand-2: #8cc3ff;
+        --shadow: 0 20px 40px rgba(0,0,0,.35);
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(1200px 600px at 80% -10%, #1d2638 0%, var(--bg) 55%);
+        color: var(--ink);
+        line-height: 1.65;
+      }
+
+      a { color: var(--brand-2); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      .site-wrap { max-width: 1240px; margin: 0 auto; padding: 22px; }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px 18px;
+        background: rgba(18,23,34,.65);
+        backdrop-filter: blur(8px);
+      }
+
+      .brand {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: .4px;
+      }
+
+      .hero {
+        margin-top: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 34px;
+        background: linear-gradient(145deg, rgba(200,169,106,.15), rgba(140,195,255,.08));
+        box-shadow: var(--shadow);
+      }
+
+      .hero h1 {
+        margin: 0 0 10px;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2rem, 3.4vw, 3.2rem);
+        line-height: 1.1;
+      }
+
+      .hero p { margin: 0; color: var(--ink-soft); max-width: 70ch; }
+
+      .grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 20px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        background: rgba(23,29,42,.9);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .feed { padding: 8px 14px 14px; }
+
+      .post {
+        border-bottom: 1px solid var(--line);
+        padding: 18px 8px;
+      }
+      .post:last-child { border-bottom: 0; }
+
+      .post-title {
+        margin: 0 0 8px;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+        line-height: 1.2;
+      }
+
+      .meta {
+        color: var(--ink-soft);
+        font-size: .9rem;
+        margin-bottom: 10px;
+      }
+
+      .post-body { color: #d8e0ee; }
+
+      .read-more {
+        display: inline-block;
+        margin-top: 8px;
+        color: var(--brand);
+        font-weight: 600;
+      }
+
+      .sidebar { padding: 12px; }
+      .widget-shell {
+        margin: 0 0 14px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--bg-soft);
+      }
+      .widget-shell h3 { margin: 0 0 8px; font-size: 1rem; color: var(--brand); }
+
+      .footer {
+        margin: 20px 0 6px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 18px;
+        color: var(--ink-soft);
+        background: rgba(18,23,34,.6);
+      }
+
+      img { max-width: 100%; height: auto; border-radius: 10px; }
+
+      @media (max-width: 980px) {
+        .grid { grid-template-columns: 1fr; }
+      }
+    ]]></b:skin>
+  </head>
+
+  <body>
+    <div class='site-wrap'>
+      <header class='topbar'>
+        <div class='brand'><data:blog.title/></div>
+        <div><a expr:href='data:blog.homepageUrl'>Home</a></div>
+      </header>
+
+      <section class='hero'>
+        <h1><data:blog.title/></h1>
+        <p><data:blog.description/></p>
+      </section>
+
+      <main class='grid'>
+        <section class='panel feed'>
+          <b:section id='main' maxwidgets='1' showaddelement='no'>
+            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'>
+              <b:includable id='main' var='this'>
+                <b:if cond='data:view.isHomepage'>
+                  <b:loop values='data:posts' var='post'>
+                    <article class='post'>
+                      <h2 class='post-title'><a expr:href='data:post.url'><data:post.title/></a></h2>
+                      <div class='meta'>
+                        <span><data:post.author.name/></span>
+                        <span> · </span>
+                        <span><data:post.dateHeader/></span>
+                      </div>
+                      <div class='post-body'>
+                        <data:post.snippet/>
+                      </div>
+                      <a class='read-more' expr:href='data:post.url'>Read story →</a>
+                    </article>
+                  </b:loop>
+                <b:else/>
+                  <b:if cond='data:view.isPost'>
+                    <article class='post'>
+                      <h1 class='post-title'><data:post.title/></h1>
+                      <div class='meta'>
+                        <span><data:post.author.name/></span>
+                        <span> · </span>
+                        <span><data:post.dateHeader/></span>
+                      </div>
+                      <div class='post-body'>
+                        <data:post.body/>
+                      </div>
+                    </article>
+                  <b:else/>
+                    <b:loop values='data:posts' var='post'>
+                      <article class='post'>
+                        <h2 class='post-title'><a expr:href='data:post.url'><data:post.title/></a></h2>
+                        <div class='post-body'><data:post.snippet/></div>
+                      </article>
+                    </b:loop>
+                  </b:if>
+                </b:if>
+              </b:includable>
+            </b:widget>
+          </b:section>
+        </section>
+
+        <aside class='panel sidebar'>
+          <div class='widget-shell'>
+            <h3>About</h3>
+            <p>High-end magazine style. Clean, editorial, conversion-ready.</p>
+          </div>
+          <b:section id='sidebar' maxwidgets='10' showaddelement='yes'>
+            <b:widget id='Profile1' title='Author' type='Profile' visible='true'/>
+            <b:widget id='Label1' title='Categories' type='Label' visible='true'/>
+            <b:widget id='BlogArchive1' title='Archive' type='BlogArchive' visible='true'/>
+          </b:section>
+        </aside>
+      </main>
+
+      <footer class='footer'>
+        <div>© <data:blog.title/> · Crafted in editorial style.</div>
+      </footer>
+    </div>
+  </body>
+</html>
