@@ -49,6 +49,7 @@
 <input name="_captcha" type="hidden" value="true"/>
 <input name="_next" type="hidden" value="https://aip-therapy-site-nemq.vercel.app/contact.html?sent=1"/>
 <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<input id="form_page" name="page_url" type="hidden" value="https://aiptherapy.uk/contact.html"/>
 <div class="form-grid"><div><label for="first_name">First name</label><input autocomplete="given-name" id="first_name" name="first_name" required="" type="text"/></div><div><label for="last_name">Last name</label><input autocomplete="family-name" id="last_name" name="last_name" required="" type="text"/></div><div><label for="email">Email</label><input autocomplete="email" id="email" name="email" required="" type="email"/></div><div><label for="phone">Phone</label><input autocomplete="tel" id="phone" name="phone" type="tel"/></div><div class="full"><label for="service">Preferred service</label><select id="service" name="preferred_service" required=""><option value="">Select one</option><option>Psychotherapy</option><option>Hypnotherapy</option><option>EMDR / trauma support</option><option>Not sure yet</option></select></div><div class="full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us briefly what support you are looking for" required="" rows="6"></textarea></div><div class="full"><button class="btn primary" type="submit">Send enquiry</button></div></div></form></div></section>
 <section class="section review-strip"><div class="container card"><h2>Reviews</h2><div class="review-summary">★★★★★ 6 recent Google reviews highlighted • <a href="https://www.google.com/maps/search/?api=1&amp;query=Anything+is+Possible+Therapy+Derby" rel="noopener" target="_blank">View full Google profile</a></div>
 <div class="review-grid">
@@ -102,5 +103,7 @@
     toggleBtn.textContent = open ? '✕' : '☰';
   });
 })();
+  const pageField = document.getElementById('form_page');
+  if (pageField) pageField.value = window.location.href;
 </script>
 </body></html>
