@@ -513,3 +513,24 @@ h3 {
 
 .offer-ribbon { background: #ffe8a3; color: #2b2b2b; border-top: 1px solid #f4cf6b; border-bottom: 1px solid #f4cf6b; font-weight: 700; }
 .offer-ribbon .container { padding: 10px 0; text-align: center; }
+
+/* ===== MAX 2-COLUMN LAYOUT ===== */
+.grid-2 {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-2 .span-full {
+  grid-column: 1 / -1;
+}
+
+.review-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+@media (max-width: 700px) {
+  .grid-2,
+  .review-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
