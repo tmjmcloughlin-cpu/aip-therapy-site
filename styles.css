@@ -256,6 +256,8 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 .review-summary { background: var(--blue-soft); border:1px solid #bfd6f1; color:#264a73; border-radius: 10px; padding:10px 12px; margin: 10px 0 14px; font-weight:600; }
 .hero-review { margin-top:0; max-width:480px; display:flex; flex-direction:column; gap:8px; }
 .hero-review .stars { font-size:1.25rem; color:#f5b301; letter-spacing:3px; }
+.hero-review-image { border-radius:14px; overflow:hidden; margin-bottom:12px; }
+.hero-review-image img { display:block; width:100%; height:auto; border-radius:14px; border:1px solid var(--border); }
 .profile-photo { width:100%; max-width:360px; border-radius:14px; border:1px solid var(--border); box-shadow: var(--shadow); }
 
 
