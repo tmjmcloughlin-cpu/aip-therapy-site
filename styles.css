@@ -258,6 +258,11 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 .hero-review .stars { font-size:1.25rem; color:#f5b301; letter-spacing:3px; }
 .hero-review-image { border-radius:14px; overflow:hidden; margin-bottom:12px; }
 .hero-review-image img { display:block; width:100%; height:auto; border-radius:14px; border:1px solid var(--border); }
+.arrival-gallery figure { margin:0; }
+.arrival-slide { display:none; }
+.arrival-slide.active { display:block; }
+.arrival-controls { display:flex; gap:10px; margin-top:18px; flex-wrap:wrap; }
+.arrival-steps { margin-top:12px; padding-left:20px; }
 .profile-photo { width:100%; max-width:360px; border-radius:14px; border:1px solid var(--border); box-shadow: var(--shadow); }
 
 

@@ -48,6 +48,7 @@
 <section class="section"><div class="container card"><h2>Key pages</h2><div class="subnav"><a href="location-derby.html">Location</a><a href="fees-faq.html">Fees &amp; FAQs</a><a href="trauma-therapy-derby.html">Trauma Therapy</a><a href="smoking-cessation-hypnotherapy-derby.html">Smoking Cessation</a><a href="anger-management-therapy-derby.html">Anger Management</a></div></div></section>
 <section class="section"><div class="container grid hypno-visuals"><article class="card"><div class="image-frame"><img alt="Stress and fatigue support visual" class="media-fit media-square" src="/assets/images/b5276c_909c6cebf1c74bc9af58703a78974550--223c10f1.jpg"/></div><p class="small muted">Stress &amp; fatigue</p></article><article class="card"><div class="image-frame"><img alt="Supportive therapeutic conversation visual" class="media-fit media-square" src="/assets/images/b5276c_47a1aa46a12449fcb47e3a2c26b5e970--699c48bb.jpg"/></div><p class="small muted">Support &amp; growth</p></article></div></section>
 <section class="section alt"><div class="container card"><h2>Clinic interior video</h2><p class="muted">See the setting before you attend. Online sessions are also available UK-wide.</p><div class="video-box"><video controls="" preload="metadata" src="/assets/videos/file-mp4-2553539c.mp4"></video></div></div></section>
+<section class="section"><div class="container card"><h2>How to find the clinic (photos + steps)</h2><div class="grid-2"><div><div class="arrival-gallery" id="arrivalGallery"><figure class="arrival-slide active"><div class="image-frame"><img alt="Wilson Street approach view in Derby city centre" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-c.jpg"/></div><figcaption class="muted small">Wilson Street in Derby city centre, close to the clinic location.</figcaption></figure><figure class="arrival-slide"><div class="image-frame"><img alt="Wilson Street Derby city-centre building near the clinic" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-a.jpg"/></div><figcaption class="muted small">Building frontage near Room 6, 72 Wilson Street.</figcaption></figure><figure class="arrival-slide"><div class="image-frame"><img alt="Closer exterior building view on Wilson Street Derby" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-b.jpg"/></div><figcaption class="muted small">Closer exterior view so it is easy to recognise on arrival.</figcaption></figure><figure class="arrival-slide"><div class="image-frame"><img alt="Clinic entrance door on Wilson Street Derby" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-door.jpg"/></div><figcaption class="muted small">The entrance door clients should look for. Please buzz Room 6 on the intercom.</figcaption></figure><figure class="arrival-slide"><div class="image-frame"><img alt="Door with number 6 plaque at Wilson Street Derby" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-door2.jpg"/></div><figcaption class="muted small">Door number 6 — knock here and we’ll greet you.</figcaption></figure><figure class="arrival-slide"><div class="image-frame"><img alt="Entrance stairs for Room 6 on Wilson Street Derby" class="media-fit media-card" loading="lazy" src="/assets/images/location/wilson-street-derby-stairs.jpg"/></div><figcaption class="muted small">After buzzing, head up these stairs to the first landing for Room 6.</figcaption></figure></div></div><div><p class="muted small" style="margin-top:10px">If you’re unsure on arrival, call or message and we’ll guide you in.</p><ol class="arrival-steps list-clean"><li>Walk along Wilson Street from the city-centre side (St Peter's Street) and look for the red-brick frontage shown above.</li><li>Keep the building on your right and continue a few metres until you reach the doorway set back slightly from the pavement.</li><li>Check you're outside No. 72 — the entrance has a glass door and the Room 6 buzzer panel.</li><li>Press the Room 6 buzzer so we know you've arrived and the door will release.</li><li>Head up the stairs to the first landing — Room 6 is at the top (image 5).</li><li>Knock on the door marked Room 6 — you're here.</li></ol><div class="arrival-controls"><button class="btn secondary" id="arrivalPrev" type="button">Previous photo</button><button class="btn primary" id="arrivalNext" type="button">Next photo</button><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Room+6%2C+72+Wilson+St%2C+Derby+DE1+1PL" rel="noopener" target="_blank">Open in Google Maps</a></div></div></div></div></section>
 <section class="section">
 <div class="container card">
 <h2>Areas we cover</h2>
@@ -85,6 +86,27 @@
     const open = header.classList.toggle('menu-open');
     toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
     toggleBtn.textContent = open ? '✕' : '☰';
+  });
+})();
+
+(function(){
+  const gallery = document.getElementById('arrivalGallery');
+  if (!gallery) return;
+  const slides = Array.from(gallery.querySelectorAll('.arrival-slide'));
+  const prev = document.getElementById('arrivalPrev');
+  const next = document.getElementById('arrivalNext');
+  if (!slides.length || !prev || !next) return;
+  let i = 0;
+  const show = (n) => {
+    slides.forEach((slide, idx) => slide.classList.toggle('active', idx === n));
+  };
+  prev.addEventListener('click', function(){
+    i = (i - 1 + slides.length) % slides.length;
+    show(i);
+  });
+  next.addEventListener('click', function(){
+    i = (i + 1) % slides.length;
+    show(i);
   });
 })();
 </script>
