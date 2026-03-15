@@ -263,6 +263,15 @@ label { font-weight:600; display:block; margin-bottom:6px; }
 .arrival-slide.active { display:block; }
 .arrival-controls { display:flex; gap:10px; margin-top:18px; flex-wrap:wrap; }
 .arrival-steps { margin-top:12px; padding-left:20px; }
+
+.policy-callout {
+  border-left: 4px solid var(--accent);
+  background: var(--surface-soft);
+  box-shadow: var(--shadow);
+  margin-top: 20px;
+}
+.policy-callout h3 { margin-top: 0; }
+
 .profile-photo { width:100%; max-width:360px; border-radius:14px; border:1px solid var(--border); box-shadow: var(--shadow); }
 
 
