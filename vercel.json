@@ -1,6 +1,8 @@
 {
   "buildCommand": "python3 tools/update_sitemap.py",
   "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/seo-nottingham-boiler-specialists",
