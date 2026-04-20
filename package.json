@@ -1,0 +1,11 @@
+{
+  "name": "aip-therapy-site",
+  "version": "1.0.0",
+  "description": "AIP Therapy — Professional therapy services in Derby",
+  "private": true,
+  "scripts": {
+    "build": "python3 tools/update_sitemap.py",
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  }
+}
