@@ -7,7 +7,7 @@
   'use strict';
 
   var STORAGE_KEY = 'aip_cookie_consent';
-  var GA_ID       = 'G-4F4Y57E3FF';
+  var GA_ID       = 'G-WXQ4QMF42K';
   var CLARITY_ID  = 'w7jfm5pbra';
 
   /* ── Load analytics ──────────────────────────────────────────── */
