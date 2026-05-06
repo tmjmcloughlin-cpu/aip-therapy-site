@@ -830,7 +830,7 @@ footer {
   margin-top: 20px;
 }
 .credential-strip img {
-  height: 72px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -841,13 +841,13 @@ footer {
 }
 /* Slightly smaller in the footer (dark bg) */
 .footer-brand .credential-strip img {
-  height: 60px;
+  height: 76px;
   padding: 5px 8px;
   border-radius: 6px;
 }
 /* Larger on the James Harris qualifications section */
 .credentials-section .credential-strip img {
-  height: 90px;
+  height: 110px;
   padding: 8px 14px;
   border-radius: 10px;
 }
@@ -860,7 +860,7 @@ footer {
   margin-top: 16px;
 }
 .hero-credential-strip img {
-  height: 56px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   background: #fff;
@@ -869,7 +869,7 @@ footer {
   box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 @media (max-width: 600px) {
-  .credential-strip img { height: 52px; }
-  .credentials-section .credential-strip img { height: 68px; }
-  .hero-credential-strip img { height: 44px; }
+  .credential-strip img { height: 68px; }
+  .credentials-section .credential-strip img { height: 84px; }
+  .hero-credential-strip img { height: 58px; }
 }
