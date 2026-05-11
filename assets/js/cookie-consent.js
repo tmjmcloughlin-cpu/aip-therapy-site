@@ -8,6 +8,7 @@
 
   var STORAGE_KEY = 'aip_cookie_consent';
   var GA_ID       = 'G-WXQ4QMF42K';
+  var AW_ID       = 'AW-16604313909';
   var CLARITY_ID  = 'w7jfm5pbra';
 
   /* ── Load analytics ──────────────────────────────────────────── */
@@ -23,6 +24,7 @@
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', GA_ID);
+    gtag('config', AW_ID);
   }
 
   function loadClarity() {
@@ -70,7 +72,7 @@
         '<p class="ccb-text">' +
           'We use cookies to understand how visitors use this site ' +
           '(Google Analytics &amp; Microsoft Clarity). ' +
-          'No advertising or third-party tracking cookies are used. ' +
+          'We also use Google Ads cookies to measure the effectiveness of our advertising. ' +
           '<a href="/cookie-policy.html" class="ccb-link">Cookie Policy</a>' +
         '</p>' +
         '<div class="ccb-btns">' +
