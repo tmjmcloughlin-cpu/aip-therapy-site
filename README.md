@@ -1,6 +1,6 @@
 # AIP Therapy Site (V1 HTML Prototype)
 
-Simple static prototype to review structure/copy before building final in Wix.
+Simple static prototype to review structure/copy before building final.
 
 ## Files
 - `index.html` — homepage
@@ -15,4 +15,3 @@ Open `index.html` in a browser.
 ## Next steps
 1. Confirm copy and section order.
 2. Update contact details + booking URL.
-3. Recreate approved version in Wix.
